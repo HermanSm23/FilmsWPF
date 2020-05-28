@@ -1,0 +1,18 @@
+﻿<Window x:Class="FilmsWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilmsWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="666" Width="483">
+    <Grid Margin="0,0,0,0">
+        <Button x:Name="addButton" Content="Додати" IsDefault="True" Click="addButton_Click" Margin="10,85,10,497" />
+        <Button x:Name="viewButton" Content="Переглянути" IsDefault="True" Click="viewButton_Click" Margin="10,10,10,572" />
+        <Button x:Name="editButton" Content="Редагувати" IsDefault="True" Click="editButton_Click" Margin="10,170,10,412" />
+        <Button x:Name="deleteButton" Content="Видалити" IsDefault="True" Click="deleteButton_Click" Margin="10,255,10,334" />
+        <Button x:Name="jsonButton" Content="Серіалізувати JSON" IsDefault="True" Click="jsonButton_Click" Margin="10,330,10,257" />
+        <Button x:Name="xmlButton" Content="Серіалізувати XML" IsDefault="True" Click="xmlButton_Click" Margin="10,412,10,172" />
+        <Button x:Name="binarButton" Content="Серіалізувати Binary" IsDefault="True" Click="binarButton_Click" Margin="10,490,10,87" />
+    </Grid>
+</Window>

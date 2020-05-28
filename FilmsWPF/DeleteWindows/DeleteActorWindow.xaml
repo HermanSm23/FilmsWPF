@@ -1,0 +1,13 @@
+﻿<Window x:Class="FilmsWPF.DeleteActorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilmsWPF"
+        mc:Ignorable="d"
+        Title="DeleteActorWindow" Height="350" Width="350" Loaded="Window_Loaded">
+    <Grid>
+        <ComboBox x:Name="deleteActorComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="110,93,0,0"/>
+        <Button x:Name="deleteActorButton" Content="Видалити актора" IsDefault="True" Click="deleteActorButton_Click" Margin="91,175,114,50" />
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="FilmsWPF.AddEmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilmsWPF"
+        mc:Ignorable="d"
+        Title="AddEmployeeWindow" Height="406" Width="473">
+    <Grid>
+        <Label Content="Повне ім'я" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="75" Margin="10,10,0,0"/>
+        <Label Content="Стать" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="75" Margin="10,85,0,0"/>
+        <Label Content="Дата народження" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="110" Margin="10,165,0,0"/>
+        <Label Content="Позиція" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="75" Margin="10,235,0,0"/>
+        <TextBox x:Name="fullNameTextBox" HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" Margin="10,40,0,0" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="sexTypeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,115,0,0">
+            <TextBlock> Жіноча</TextBlock>
+            <TextBlock> Чоловіча</TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="positionTypeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,265,0,0">
+            <TextBlock> Режисер</TextBlock>
+            <TextBlock> Продюсер</TextBlock>
+        </ComboBox>
+        <DatePicker x:Name="birthdayDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,195,0,0" Width="140"/>
+        <Button x:Name="addEmployeeButtonn" Content="Додати працівника" IsDefault="True" Click="addEmployeeButtonn_Click" Margin="10,305,10,22" Grid.ColumnSpan="2" />
+    </Grid>
+</Window>

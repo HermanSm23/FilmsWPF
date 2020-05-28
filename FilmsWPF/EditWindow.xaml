@@ -1,0 +1,15 @@
+﻿<Window x:Class="FilmsWPF.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilmsWPF"
+        mc:Ignorable="d"
+        Title="EditWindow" Height="406" Width="513">
+    <Grid>
+        <Button x:Name="editActorButton" Content="Змінити актора" IsDefault="True" Click="editActorButton_Click" Margin="10,10,10,317" />
+        <Button x:Name="editEmployeeButton" Content="Змінити працівника" IsDefault="True" Click="editEmployeeButton_Click" Margin="10,90,10,237" />
+        <Button x:Name="editFilmButton" Content="Змінити фільм" IsDefault="True" Click="editFilmButton_Click" Margin="10,255,10,62" />
+        <Button x:Name="editSceneButton" Content="Змінити сцену" IsDefault="True" Click="editSceneButton_Click" Margin="10,170,10,147" />
+    </Grid>
+</Window>

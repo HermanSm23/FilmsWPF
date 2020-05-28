@@ -1,0 +1,41 @@
+﻿<Window x:Class="FilmsWPF.EditWindows.EditFilmWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilmsWPF.EditWindows"
+        mc:Ignorable="d"
+        Title="EditFilmWindow" Height="771" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Назва:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="10,10,0,0"/>
+        <Label Content="Тривалість:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="10,55,0,0"/>
+        <Label Content="Дата початок знімань:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="135" Margin="10,110,0,0"/>
+        <Label Content="Дата завершення знімань:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="160" Margin="10,170,0,0"/>
+        <Label Content="Прем'єра:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="70" Margin="10,235,0,0"/>
+        <Label Content="Бюджет:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="10,290,0,0"/>
+        <Label Content="Жанр:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="10,350,0,0"/>
+        <Label Content="Актор:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="10,405,0,0"/>
+        <Label Content="Робітник:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="10,465,0,0"/>
+        <Label Content="Сцена:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="10,515,0,0"/>
+        <Label Content="Опис:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="100" Margin="10,575,0,0"/>
+
+        <TextBox x:Name="filmNameTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Margin="10,32,0,0"/>
+        <TextBox x:Name="filmDurationTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Margin="10,82,0,0"/>
+        <TextBox x:Name="budgetTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Margin="10,320,0,0"/>
+        <DatePicker x:Name="dateStartShoot" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,140,0,0"/>
+        <DatePicker x:Name="dateEndShoot" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,200,0,0"/>
+        <DatePicker x:Name="premierDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,261,0,0"/>
+        <ComboBox x:Name="genreTypeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,378,0,0">
+            <TextBlock> Головна</TextBlock>
+            <TextBlock> Другорядна</TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="actorComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,440,0,0"/>
+        <ComboBox x:Name="employeeComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,488,0,0"/>
+        <ComboBox x:Name="sceneComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,550,0,0"/>
+        <TextBox x:Name="descriptionTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="585" Margin="10,605,0,0"/>
+        <Button x:Name="editFilmButtonn" Content="Змінити" IsDefault="True" Click="editFilmButtonn_Click" Margin="10,650,10,22" />
+        <Label Content="Фільм:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="430,10,0,0"/>
+        <ComboBox x:Name="filmComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="440,36,0,0"/>
+
+    </Grid>
+</Window>

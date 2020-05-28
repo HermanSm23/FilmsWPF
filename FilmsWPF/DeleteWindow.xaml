@@ -1,0 +1,15 @@
+﻿<Window x:Class="FilmsWPF.DeleteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilmsWPF"
+        mc:Ignorable="d"
+        Title="DeleteWindow" Height="426" Width="613">
+    <Grid Margin="0,0,-291,-29">
+        <Button x:Name="deleteActorButton" Content="Видалити актора" IsDefault="True" Click="deleteActorButton_Click" Margin="10,10,350,351" />
+        <Button x:Name="deleteEmployeeButton" Content="Видалити працівника" IsDefault="True" Click="deleteEmployeeButton_Click" Margin="10,100,350,261" />
+        <Button x:Name="deleteFilmButton" Content="Видалити фільм" IsDefault="True" Click="deleteFilmButton_Click" Margin="10,295,350,66" />
+        <Button x:Name="deleteSceneButton" Content="Видалити сцену" IsDefault="True" Click="deleteSceneButton_Click" Margin="10,195,350,166" />
+    </Grid>
+</Window>
